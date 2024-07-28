@@ -1,3 +1,4 @@
+/* Program: Finding real roots of nonlinear equation using Bisection Method */
 #include <stdio.h>
 #define MAX_ITER 1000  // Maximum number of iterations
 
