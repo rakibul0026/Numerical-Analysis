@@ -13,7 +13,7 @@ int main() {
     float x;
     int i = 0, n;
     cout << "Enter first approximation: ";
-    cin >> x; // Initial guess
+    cin >> x; 
     cout << "Enter number of iterations: ";
     cin >> n; // Number of iterations
 
