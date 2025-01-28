@@ -1,0 +1,44 @@
+#include <bits/stdc++.h>
+using namespace std;
+double func(double x)
+{
+    return ((4*exp(-x)*sin(x))-1);
+}
+void bisection(double a, double b,double e)
+{
+    if (func(a) * func(b) >= 0)
+    {
+        cout << "Incurrect a and b ";
+        return;
+    }
+    double c = 0;
+    while ((b - a) >= e)
+    {
+        c = (a + b) / 2;
+        if (func(c) == 0)
+        {
+            cout << "Root:" << c << endl;
+            break;
+        }
+        else if (func(c) * func(a) > 0)
+        {
+            cout << "Root :" << c << endl;
+            a = c;
+        }
+        else
+        {
+            cout << "Root :" << c << endl;
+            b = c;
+        }
+    }
+}
+int main()
+{
+    double a,b, e;
+    cout << "Enter the value of a and b " << endl;
+    cin >> a>>b;
+    cout << "Enter the value of e " << endl;
+    cin >> e;
+
+     bisection(a, b,e);
+}
