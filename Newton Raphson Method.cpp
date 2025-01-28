@@ -15,7 +15,7 @@ int main() {
     cout << "Enter first approximation: ";
     cin >> x; 
     cout << "Enter number of iterations: ";
-    cin >> n; // Number of iterations
+    cin >> n; 
 
     while (i < n) {
         float f_value = fun(x);
